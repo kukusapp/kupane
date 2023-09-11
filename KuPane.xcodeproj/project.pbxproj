@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAD87BB72AAF159E00EEAEAE /* KuPaneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BB62AAF159E00EEAEAE /* KuPaneApp.swift */; };
+		AAD87BBB2AAF15A100EEAEAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD87BBA2AAF15A100EEAEAE /* Assets.xcassets */; };
+		AAD87BBE2AAF15A100EEAEAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD87BBD2AAF15A100EEAEAE /* Preview Assets.xcassets */; };
+		AAD87BC92AAF15A100EEAEAE /* KuPaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BC82AAF15A100EEAEAE /* KuPaneTests.swift */; };
+		AAD87BD32AAF15A100EEAEAE /* KuPaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BD22AAF15A100EEAEAE /* KuPaneUITests.swift */; };
+		AAD87BD52AAF15A100EEAEAE /* KuPaneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BD42AAF15A100EEAEAE /* KuPaneUITestsLaunchTests.swift */; };
+		AAD87BE92AAF1B9200EEAEAE /* Layout.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BE82AAF1B9200EEAEAE /* Layout.Model.swift */; };
+		AAD87BEB2AAF1C2F00EEAEAE /* Shortcut.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BEA2AAF1C2F00EEAEAE /* Shortcut.Model.swift */; };
+		AAD87BED2AAF270E00EEAEAE /* Keycode.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BEC2AAF270E00EEAEAE /* Keycode.Model.swift */; };
+		AAD87BEF2AAF274900EEAEAE /* ModifierKey.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BEE2AAF274900EEAEAE /* ModifierKey.Model.swift */; };
+		AAD87BF12AAF299A00EEAEAE /* Layout.Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BF02AAF299A00EEAEAE /* Layout.Service.swift */; };
+		AAD87BF52AAF3C1700EEAEAE /* DefaultLayouts.Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BF42AAF3C1700EEAEAE /* DefaultLayouts.Const.swift */; };
+		AAD87BF72AAF3FA700EEAEAE /* Layout.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BF62AAF3FA700EEAEAE /* Layout.ViewModel.swift */; };
+		AAD87BF92AAF404100EEAEAE /* StatusBarManagement.Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BF82AAF404100EEAEAE /* StatusBarManagement.Service.swift */; };
+		AAD87BFB2AAF42A700EEAEAE /* KeyboardListener.Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87BFA2AAF42A700EEAEAE /* KeyboardListener.Service.swift */; };
+		AAD87C072AAF4C5500EEAEAE /* Home.Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD87C062AAF4C5500EEAEAE /* Home.Page.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAD87BC52AAF15A100EEAEAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAD87BAB2AAF159E00EEAEAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD87BB22AAF159E00EEAEAE;
+			remoteInfo = KuPane;
+		};
+		AAD87BCF2AAF15A100EEAEAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAD87BAB2AAF159E00EEAEAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD87BB22AAF159E00EEAEAE;
+			remoteInfo = KuPane;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAD87BB32AAF159E00EEAEAE /* KuPane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KuPane.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD87BB62AAF159E00EEAEAE /* KuPaneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuPaneApp.swift; sourceTree = "<group>"; };
+		AAD87BBA2AAF15A100EEAEAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAD87BBD2AAF15A100EEAEAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAD87BBF2AAF15A100EEAEAE /* KuPane.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KuPane.entitlements; sourceTree = "<group>"; };
+		AAD87BC42AAF15A100EEAEAE /* KuPaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KuPaneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD87BC82AAF15A100EEAEAE /* KuPaneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuPaneTests.swift; sourceTree = "<group>"; };
+		AAD87BCE2AAF15A100EEAEAE /* KuPaneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KuPaneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD87BD22AAF15A100EEAEAE /* KuPaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuPaneUITests.swift; sourceTree = "<group>"; };
+		AAD87BD42AAF15A100EEAEAE /* KuPaneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuPaneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AAD87BE82AAF1B9200EEAEAE /* Layout.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.Model.swift; sourceTree = "<group>"; };
+		AAD87BEA2AAF1C2F00EEAEAE /* Shortcut.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcut.Model.swift; sourceTree = "<group>"; };
+		AAD87BEC2AAF270E00EEAEAE /* Keycode.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keycode.Model.swift; sourceTree = "<group>"; };
+		AAD87BEE2AAF274900EEAEAE /* ModifierKey.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierKey.Model.swift; sourceTree = "<group>"; };
+		AAD87BF02AAF299A00EEAEAE /* Layout.Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.Service.swift; sourceTree = "<group>"; };
+		AAD87BF42AAF3C1700EEAEAE /* DefaultLayouts.Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLayouts.Const.swift; sourceTree = "<group>"; };
+		AAD87BF62AAF3FA700EEAEAE /* Layout.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.ViewModel.swift; sourceTree = "<group>"; };
+		AAD87BF82AAF404100EEAEAE /* StatusBarManagement.Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarManagement.Service.swift; sourceTree = "<group>"; };
+		AAD87BFA2AAF42A700EEAEAE /* KeyboardListener.Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardListener.Service.swift; sourceTree = "<group>"; };
+		AAD87BFE2AAF47B000EEAEAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AAD87C062AAF4C5500EEAEAE /* Home.Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.Page.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAD87BB02AAF159E00EEAEAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD87BC12AAF15A100EEAEAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD87BCB2AAF15A100EEAEAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAD87BAA2AAF159E00EEAEAE = {
+			isa = PBXGroup;
+			children = (
+				AAD87BB52AAF159E00EEAEAE /* KuPane */,
+				AAD87BC72AAF15A100EEAEAE /* KuPaneTests */,
+				AAD87BD12AAF15A100EEAEAE /* KuPaneUITests */,
+				AAD87BB42AAF159E00EEAEAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAD87BB42AAF159E00EEAEAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAD87BB32AAF159E00EEAEAE /* KuPane.app */,
+				AAD87BC42AAF15A100EEAEAE /* KuPaneTests.xctest */,
+				AAD87BCE2AAF15A100EEAEAE /* KuPaneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAD87BB52AAF159E00EEAEAE /* KuPane */ = {
+			isa = PBXGroup;
+			children = (
+				AAD87C012AAF4BC700EEAEAE /* Views */,
+				AAD87BFE2AAF47B000EEAEAE /* Info.plist */,
+				AAD87BF32AAF3BFA00EEAEAE /* Constants */,
+				AAD87BE72AAF19DB00EEAEAE /* ViewModels */,
+				AAD87BE62AAF19CE00EEAEAE /* Models */,
+				AAD87BE12AAF176A00EEAEAE /* Services */,
+				AAD87BB62AAF159E00EEAEAE /* KuPaneApp.swift */,
+				AAD87BBA2AAF15A100EEAEAE /* Assets.xcassets */,
+				AAD87BBF2AAF15A100EEAEAE /* KuPane.entitlements */,
+				AAD87BBC2AAF15A100EEAEAE /* Preview Content */,
+			);
+			path = KuPane;
+			sourceTree = "<group>";
+		};
+		AAD87BBC2AAF15A100EEAEAE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AAD87BBD2AAF15A100EEAEAE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AAD87BC72AAF15A100EEAEAE /* KuPaneTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAD87BC82AAF15A100EEAEAE /* KuPaneTests.swift */,
+			);
+			path = KuPaneTests;
+			sourceTree = "<group>";
+		};
+		AAD87BD12AAF15A100EEAEAE /* KuPaneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAD87BD22AAF15A100EEAEAE /* KuPaneUITests.swift */,
+				AAD87BD42AAF15A100EEAEAE /* KuPaneUITestsLaunchTests.swift */,
+			);
+			path = KuPaneUITests;
+			sourceTree = "<group>";
+		};
+		AAD87BE12AAF176A00EEAEAE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AAD87BF02AAF299A00EEAEAE /* Layout.Service.swift */,
+				AAD87BF82AAF404100EEAEAE /* StatusBarManagement.Service.swift */,
+				AAD87BFA2AAF42A700EEAEAE /* KeyboardListener.Service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AAD87BE62AAF19CE00EEAEAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAD87BE82AAF1B9200EEAEAE /* Layout.Model.swift */,
+				AAD87BEA2AAF1C2F00EEAEAE /* Shortcut.Model.swift */,
+				AAD87BEC2AAF270E00EEAEAE /* Keycode.Model.swift */,
+				AAD87BEE2AAF274900EEAEAE /* ModifierKey.Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAD87BE72AAF19DB00EEAEAE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AAD87BF62AAF3FA700EEAEAE /* Layout.ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AAD87BF32AAF3BFA00EEAEAE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AAD87BF42AAF3C1700EEAEAE /* DefaultLayouts.Const.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AAD87C012AAF4BC700EEAEAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAD87C032AAF4BEE00EEAEAE /* Pages */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAD87C032AAF4BEE00EEAEAE /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				AAD87C062AAF4C5500EEAEAE /* Home.Page.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAD87BB22AAF159E00EEAEAE /* KuPane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD87BD82AAF15A100EEAEAE /* Build configuration list for PBXNativeTarget "KuPane" */;
+			buildPhases = (
+				AAD87BAF2AAF159E00EEAEAE /* Sources */,
+				AAD87BB02AAF159E00EEAEAE /* Frameworks */,
+				AAD87BB12AAF159E00EEAEAE /* Resources */,
+				AAD87BF22AAF398600EEAEAE /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KuPane;
+			productName = KuPane;
+			productReference = AAD87BB32AAF159E00EEAEAE /* KuPane.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAD87BC32AAF15A100EEAEAE /* KuPaneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD87BDB2AAF15A100EEAEAE /* Build configuration list for PBXNativeTarget "KuPaneTests" */;
+			buildPhases = (
+				AAD87BC02AAF15A100EEAEAE /* Sources */,
+				AAD87BC12AAF15A100EEAEAE /* Frameworks */,
+				AAD87BC22AAF15A100EEAEAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAD87BC62AAF15A100EEAEAE /* PBXTargetDependency */,
+			);
+			name = KuPaneTests;
+			productName = KuPaneTests;
+			productReference = AAD87BC42AAF15A100EEAEAE /* KuPaneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAD87BCD2AAF15A100EEAEAE /* KuPaneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD87BDE2AAF15A100EEAEAE /* Build configuration list for PBXNativeTarget "KuPaneUITests" */;
+			buildPhases = (
+				AAD87BCA2AAF15A100EEAEAE /* Sources */,
+				AAD87BCB2AAF15A100EEAEAE /* Frameworks */,
+				AAD87BCC2AAF15A100EEAEAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAD87BD02AAF15A100EEAEAE /* PBXTargetDependency */,
+			);
+			name = KuPaneUITests;
+			productName = KuPaneUITests;
+			productReference = AAD87BCE2AAF15A100EEAEAE /* KuPaneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAD87BAB2AAF159E00EEAEAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AAD87BB22AAF159E00EEAEAE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					AAD87BC32AAF15A100EEAEAE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AAD87BB22AAF159E00EEAEAE;
+					};
+					AAD87BCD2AAF15A100EEAEAE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AAD87BB22AAF159E00EEAEAE;
+					};
+				};
+			};
+			buildConfigurationList = AAD87BAE2AAF159E00EEAEAE /* Build configuration list for PBXProject "KuPane" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAD87BAA2AAF159E00EEAEAE;
+			productRefGroup = AAD87BB42AAF159E00EEAEAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAD87BB22AAF159E00EEAEAE /* KuPane */,
+				AAD87BC32AAF15A100EEAEAE /* KuPaneTests */,
+				AAD87BCD2AAF15A100EEAEAE /* KuPaneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAD87BB12AAF159E00EEAEAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD87BBE2AAF15A100EEAEAE /* Preview Assets.xcassets in Resources */,
+				AAD87BBB2AAF15A100EEAEAE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD87BC22AAF15A100EEAEAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD87BCC2AAF15A100EEAEAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AAD87BF22AAF398600EEAEAE /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then swiftlint; else echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"; fi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAD87BAF2AAF159E00EEAEAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD87BED2AAF270E00EEAEAE /* Keycode.Model.swift in Sources */,
+				AAD87BF92AAF404100EEAEAE /* StatusBarManagement.Service.swift in Sources */,
+				AAD87BF72AAF3FA700EEAEAE /* Layout.ViewModel.swift in Sources */,
+				AAD87BB72AAF159E00EEAEAE /* KuPaneApp.swift in Sources */,
+				AAD87BF52AAF3C1700EEAEAE /* DefaultLayouts.Const.swift in Sources */,
+				AAD87C072AAF4C5500EEAEAE /* Home.Page.swift in Sources */,
+				AAD87BE92AAF1B9200EEAEAE /* Layout.Model.swift in Sources */,
+				AAD87BEF2AAF274900EEAEAE /* ModifierKey.Model.swift in Sources */,
+				AAD87BEB2AAF1C2F00EEAEAE /* Shortcut.Model.swift in Sources */,
+				AAD87BF12AAF299A00EEAEAE /* Layout.Service.swift in Sources */,
+				AAD87BFB2AAF42A700EEAEAE /* KeyboardListener.Service.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD87BC02AAF15A100EEAEAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD87BC92AAF15A100EEAEAE /* KuPaneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD87BCA2AAF15A100EEAEAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD87BD52AAF15A100EEAEAE /* KuPaneUITestsLaunchTests.swift in Sources */,
+				AAD87BD32AAF15A100EEAEAE /* KuPaneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAD87BC62AAF15A100EEAEAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAD87BB22AAF159E00EEAEAE /* KuPane */;
+			targetProxy = AAD87BC52AAF15A100EEAEAE /* PBXContainerItemProxy */;
+		};
+		AAD87BD02AAF15A100EEAEAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAD87BB22AAF159E00EEAEAE /* KuPane */;
+			targetProxy = AAD87BCF2AAF15A100EEAEAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AAD87BD62AAF15A100EEAEAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAD87BD72AAF15A100EEAEAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AAD87BD92AAF15A100EEAEAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = KuPane/KuPane.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KuPane/Preview Content\"";
+				DEVELOPMENT_TEAM = 83N8YDRG6D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KuPane/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "We need to resize and position windows to help manage your layout.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = indivadual.kuku.li.KuPane;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AAD87BDA2AAF15A100EEAEAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = KuPane/KuPane.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KuPane/Preview Content\"";
+				DEVELOPMENT_TEAM = 83N8YDRG6D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KuPane/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "We need to resize and position windows to help manage your layout.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = indivadual.kuku.li.KuPane;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AAD87BDC2AAF15A100EEAEAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83N8YDRG6D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = indivadual.kuku.li.KuPaneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KuPane.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KuPane";
+			};
+			name = Debug;
+		};
+		AAD87BDD2AAF15A100EEAEAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83N8YDRG6D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = indivadual.kuku.li.KuPaneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KuPane.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KuPane";
+			};
+			name = Release;
+		};
+		AAD87BDF2AAF15A100EEAEAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83N8YDRG6D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = indivadual.kuku.li.KuPaneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KuPane;
+			};
+			name = Debug;
+		};
+		AAD87BE02AAF15A100EEAEAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83N8YDRG6D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = indivadual.kuku.li.KuPaneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KuPane;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAD87BAE2AAF159E00EEAEAE /* Build configuration list for PBXProject "KuPane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD87BD62AAF15A100EEAEAE /* Debug */,
+				AAD87BD72AAF15A100EEAEAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD87BD82AAF15A100EEAEAE /* Build configuration list for PBXNativeTarget "KuPane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD87BD92AAF15A100EEAEAE /* Debug */,
+				AAD87BDA2AAF15A100EEAEAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD87BDB2AAF15A100EEAEAE /* Build configuration list for PBXNativeTarget "KuPaneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD87BDC2AAF15A100EEAEAE /* Debug */,
+				AAD87BDD2AAF15A100EEAEAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD87BDE2AAF15A100EEAEAE /* Build configuration list for PBXNativeTarget "KuPaneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD87BDF2AAF15A100EEAEAE /* Debug */,
+				AAD87BE02AAF15A100EEAEAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAD87BAB2AAF159E00EEAEAE /* Project object */;
+}
