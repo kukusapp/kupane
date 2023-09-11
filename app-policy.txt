@@ -1,0 +1,26 @@
+KuPane Privacy Policy
+Effective Date: September 12, 2023
+
+This privacy policy describes how KuPane collects, uses, and shares your information whenever you use our app.
+
+Information Collection
+Data We Don't Collect: We believe in your right to privacy, so we don't gather any of your personal data. Our app, KuPane, is designed to resize and manage window layouts and does not require access to sensitive user data.
+
+How We Use Your Data
+Purpose: We use data strictly to enhance the functionality of the KuPane app. The app functionality does not extend to collecting and storing personal information from users.
+
+Third-Party Access
+We do not and will not share your data with third parties. As of the effective date listed above, no external entity has access to any user information through our app.
+
+Data Retention
+Given that we don't collect personal information, there's no data retention policy applicable for our app.
+
+Your Rights
+You have the right to request access to, modify, or delete any personal information we may have collected. However, as of the effective date above, we do not collect or retain personal information in our app.
+
+Changes to This Policy
+From time to time, we may update our Privacy Policy. If there are any significant changes, we will notify you through the app or on this page.
+
+Contact Us
+For questions about this Privacy Policy, please reach out to kuku.the.developer@gmail.com
+
